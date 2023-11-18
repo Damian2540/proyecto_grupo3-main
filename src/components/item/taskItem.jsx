@@ -3,9 +3,9 @@ import { FaTrash } from 'react-icons/fa';
 import '../item/taskItem.css'
 
 const TaskItem = ({ task, onComplete, onDelete }) => {
-  // Verificar si task está definido antes de acceder a sus propiedades
+  
   if (!task) {
-    return null; // O algún otro comportamiento por defecto
+    return null; 
   }
 
   

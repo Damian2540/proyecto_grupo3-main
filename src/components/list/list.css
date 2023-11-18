@@ -1,7 +1,0 @@
-h2 {
-    background-color: #f0f0f0; /* Color de fondo */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: -50px; /* Margen inferior para separarlo de las tareas */
-    border-radius: 5px; /* Bordes redondeados (opcional) */
-    z-index: 1; /* Asegura que esté por encima de las tareas */
-}

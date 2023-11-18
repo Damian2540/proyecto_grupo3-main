@@ -2,14 +2,15 @@ import React from 'react';
 import TaskItem from '../item/taskItem';
 
 const TaskList = ({ tasks, onComplete, onDelete }) => {
-  // Verificar si tasks está definido y es un array antes de usar map
+  
   if (!tasks || !Array.isArray(tasks)) {
-    return null; // O algún otro comportamiento por defecto
+    return null; 
   }
-
+//Los estilos del siguiente return estan en taskItem.css
+//Vean que si pueden dejarlo más bonito al proyecto
   return (
     <>
-       <h2>Lista</h2>
+       <h2>Lista</h2> 
         <ul className="info">
           <li>Tarea</li>
           <li>Estado</li>
