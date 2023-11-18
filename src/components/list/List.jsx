@@ -9,6 +9,13 @@ const TaskList = ({ tasks, onComplete, onDelete }) => {
 
   return (
     <>
+       <h2>Lista</h2>
+        <ul className="info">
+          <li>Tarea</li>
+          <li>Estado</li>
+          <li>Acción</li>
+        </ul>
+
       {tasks.map((task) => (
         <TaskItem
           key={task.id}

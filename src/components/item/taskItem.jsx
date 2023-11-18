@@ -8,10 +8,12 @@ const TaskItem = ({ task, onComplete, onDelete }) => {
     return null; // O algún otro comportamiento por defecto
   }
 
+  
   return (
     < div className={`task ${task.completed ? 'completed' : ''}`}>
-      <span>{task.name}</span>
-      <button onClick={() => onComplete(task.id)}>Pendiente</button>
+      <span className='task-name'>{task.name}</span>
+      {!task.completed ? 
+      <button className='pending-button' onClick={() => onComplete(task.id)}>Pendiente</button> : <p className='completed-text'>Completo</p>}
       <button onClick={() => onDelete(task.id)} className='icon-delete'>
         <FaTrash />
       </button>

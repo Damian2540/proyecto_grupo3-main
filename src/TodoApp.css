@@ -4,7 +4,7 @@ body{
 }
 
 header{
-  width: 500px;
+  width: 460px;
   padding: 20px;
   height: 150px;
   position: relative;
@@ -20,5 +20,14 @@ header h1{
   letter-spacing: .5px;
   font-weight: normal;
   color: white;
+}
+
+main{
+  width: 500px;
+  height: fit-content;
+  background-color: whitesmoke;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
 }
 

@@ -1,3 +1,6 @@
+.form{
+    border-bottom: -100px;
+}
 .input-container{
     position: relative;
     top: -4rem;
@@ -23,6 +26,7 @@
     border: none;
     font-size: 20px;
     border-radius: 10px;
+    border-color: transparent;
     color: white;
     letter-spacing: .5px;
     padding: 10px;
