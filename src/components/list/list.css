@@ -1,0 +1,60 @@
+.task-container{
+    padding: 20px;
+    position: relative;
+    margin: 30px auto;
+    min-height: 400px;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.task-container .title{
+    position: relative;
+    top: -20px;
+    width: 108%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.664), rgba(0, 0, 255, 0.589));
+}
+
+.task-container h1{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: normal;
+    letter-spacing: .5px;
+    padding-top: 10px;
+}
+
+.task-container .input-container{
+    position: relative;
+    top: -80px;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+}
+
+.task-container .input-container input{
+    margin: 15px 0;
+    border:none;
+    width: 70%;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+}
+
+.task-container .input-container button{
+    border: none;
+    width: 120px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    letter-spacing: .5px;
+    border-radius: 8px;
+    background-color: rgba(255, 68, 0, 0.692);
+    box-shadow: 0 0 10px rgba(255, 68, 0, 0.692);
+}
