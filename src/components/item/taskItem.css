@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 
@@ -45,9 +46,11 @@
 
 .task-name {
     margin-right: 8px;
+    width: 100px;
+    word-wrap: break-word;
 }
 
-.pending-button {
+.status-button {
     margin-right: 8px;
     border-radius: 5px;
     border-color:transparent;
@@ -61,13 +64,15 @@
     margin-right: 8px;
 }
 
-.pending-button:hover{
+.status-button:hover{
     background-color: rgb(46, 255, 116);
     box-shadow: 0 0 10px rgb(46, 255, 81);
 }
 .icon-delete{
     border-radius: 18px;
+    border: transparent;
     font-size: 20px;
     color: red;
     cursor: pointer;
 }
+
