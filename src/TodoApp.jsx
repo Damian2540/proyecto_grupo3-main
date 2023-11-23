@@ -31,11 +31,17 @@ const TodoApp = () => {
   return (
     <>
       <header>
-      <h1>Lista de Tareas</h1>
+        <h1>Lista de Tareas</h1>
       </header>
+
       <main>
-      <TaskForm onAddTask={addTask} />
-      <TaskList tasks={tasks} onComplete={completeTask} onDelete={deleteTask} />
+        <section className='container-taskForm'>
+          <TaskForm onAddTask={addTask} />
+        </section>
+
+        <section className='container-taskList'>
+          <TaskList tasks={tasks} onComplete={completeTask} onDelete={deleteTask} />
+        </section>
       </main>
     </>
   );

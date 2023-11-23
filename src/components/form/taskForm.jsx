@@ -19,21 +19,12 @@ const TaskForm = ({ onAddTask }) => {
   };
 
   return (
-    
-      <form onSubmit={handleSubmit}>
-        <section className='input-container'>
-        <input
-          type="text"
-          placeholder="¿Qué desea hacer hoy?"
-          value={newTask}
-          onChange={handleInputChange}
-        />
-        <button type="submit">Agregar</button>
-        </section>
-      </form>
-
-    
-    );
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="¿Qué desea hacer hoy?" value={newTask} onChange={handleInputChange}/>
+      
+      <button type="submit">Agregar</button>
+    </form>
+  );
 };
 
 export default TaskForm;

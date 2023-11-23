@@ -6,11 +6,10 @@ const TaskList = ({ tasks, onComplete, onDelete }) => {
   if (!tasks || !Array.isArray(tasks)) {
     return null; 
   }
-//Los estilos del siguiente return estan en taskItem.css
-//Vean que si pueden dejarlo más bonito al proyecto
+
   return (
     <>
-       <h2>Lista</h2> 
+       <h2>Lista</h2>
         <ul className="info">
           <li>Tarea</li>
           <li>Estado</li>
