@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import TaskList from '../src/components/list/List';
 import TaskForm from '../src/components/form/taskForm';
-import './TodoApp.css'
-
+import './TodoApp.css';
 
 const TodoApp = () => {
   const [tasks, setTasks] = useState([]);
+  const [noTasksMessage, setNoTasksMessage] = useState('');
 
   useEffect(() => {
     console.log('Lista de tareas actualizada:', tasks);
+    if (tasks.length === 0) {
+      setNoTasksMessage('No hay tareas pendientes');
+    } else {
+      setNoTasksMessage('');
+    }
   }, [tasks]);
 
   const addTask = (newTask) => {
@@ -22,7 +27,6 @@ const TodoApp = () => {
       )
     );
   };
-  
 
   const deleteTask = (taskId) => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== taskId));
@@ -41,6 +45,7 @@ const TodoApp = () => {
 
         <section className='container-taskList'>
           <TaskList tasks={tasks} onComplete={completeTask} onDelete={deleteTask} />
+          {noTasksMessage && <p>{noTasksMessage}</p>}
         </section>
       </main>
     </>
