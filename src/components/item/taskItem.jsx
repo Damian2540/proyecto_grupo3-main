@@ -18,7 +18,7 @@ const TaskItem = ({ task, onComplete, onDelete }) => {
           Pendiente
         </button>
       ) : (
-        <p className="completed-text">Completado</p>
+        <button  disabled className="completed-text">Completado</button>
       )}
 
 

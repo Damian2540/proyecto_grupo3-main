@@ -43,9 +43,11 @@ h2{
     border-radius: 5px;
     border-color:transparent;
     background-color: rgba(0, 128, 0, 0.438);
-    padding: 4px;
+    padding: 5px;
     color: white;
+    cursor:not-allowed;
     margin-left: -20px;
+    font-size: 16px;
 }
 .icon-delete{
     border-radius: 10px 10px 14px 14px;
