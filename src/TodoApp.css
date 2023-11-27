@@ -53,5 +53,6 @@ main section{
   padding: 10px;
   text-align: center;
   margin-top: 10px;
+  border-radius: 10px 10px 14px 14px;
+  margin: 5px;
 }
-

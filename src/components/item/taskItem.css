@@ -4,10 +4,12 @@ h2{
 }
 .info{
     list-style-type: none;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     background-color: #e0e0e0;
+    border-radius: 10px 10px 14px 14px;
+    margin: 5px;
 }
 .task{
     padding: 10px;
@@ -27,13 +29,13 @@ h2{
 }
 .pending-button{
     border-radius: 5px;
-    border-color:transparent;
-    background-color: rgba(0, 128, 0, 0.438);
+    border-color: transparent;
+    background-color: #eef560;
     padding: 5px;
-    color: white;
+    color: rgba(0,0,0,0.58);
     cursor: pointer;
-    margin-left: -20px;
-    font-size: 16px;
+    margin-left: -75px;
+    font-size: 16px
 }
 .pending-button:hover{
     background-color: rgb(46, 255, 116);
@@ -46,7 +48,7 @@ h2{
     padding: 5px;
     color: white;
     cursor:not-allowed;
-    margin-left: -20px;
+    margin-left: -75px;
     font-size: 16px;
 }
 .icon-delete{
